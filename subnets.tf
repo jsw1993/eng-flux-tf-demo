@@ -17,3 +17,13 @@ resource "aws_subnet" "public-b" {
     Name = "public-b"
   }
 }
+
+resource "aws_subnet" "public-c" {
+  vpc_id            = aws_vpc.main.id
+  cidr_block        = "172.16.102.0/24"
+  availability_zone = "eu-west-1c"
+
+  tags = {
+    Name = "public-c"
+  }
+}
