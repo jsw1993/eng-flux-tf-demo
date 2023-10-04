@@ -21,6 +21,6 @@ resource "aws_vpc" "main" {
   cidr_block = "172.16.100.0/22"
 
   tags = {
-    Name = "main"
+    Name = "main-flux"
   }
 }
